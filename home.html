@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="author" content="Archi Parekh">
+    <title>Yum-Shopping List Creator</title>
+    <link rel="stylesheet" type="text/css" href="home-style.css">
+    <script type="text/javascript" src="require.js"></script>
+    <script type="text/javascript" src="home.js"></script>
+</head>
+<body>
+	<header>
+	<h1 id = "title">Yum--Plan Your Grocery Trip</h1>
+	<br><br>
+</header>
+	<div id="parentSearch">
+	<div id="searchBar">
+		<label><input id="ingredient"type="text" name="ingredient" placeholder="Enter ingredient"></label>
+		<button id="search" onclick="saveItem()">Add to List</button>
+	</div>
+	</div>
+<div class="row">
+	<div class="column">
+	<div class="recipes">
+		<h2>Recipe Suggestions</h2>
+		<p id="foundRecipes"></p>
+		<button id="saveRecipe" onclick="recipeSearch()">Save Recipe</button>
+	</div>
+</div>
+<div class="column">
+	<div class="list">
+		<h2>Your Shopping List</h2>
+		<ul id="listItems"></ul>
+		<button id="editList">Edit</button>
+		<button id="exportList">Export</button>
+	</div>
+</div>
+
+</div>
+</body>
+</html>
